@@ -1,0 +1,17 @@
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\bin\Debug\BeispielApp.exe.config
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\bin\Debug\BeispielApp.exe
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\bin\Debug\BeispielApp.pdb
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.csprojResolveAssemblyReference.cache
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\MainWindow.g.cs
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\App.g.cs
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp_MarkupCompile.cache
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp_MarkupCompile.lref
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\MainWindow.baml
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.g.resources
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.Properties.Resources.resources
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.csproj.GenerateResource.cache
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.csproj.CoreCompileInputs.cache
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.exe
+c:\users\anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.pdb
+C:\Users\Anwender\source\repos\BeispielApp\BeispielApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anwender\source\repos\BeispielApp\BeispielApp\obj\Debug\BeispielApp.csproj.CopyComplete

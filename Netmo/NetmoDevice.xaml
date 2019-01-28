@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="Netmo.NetmoDevice"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Netmo"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+
+
+
+    <Grid x:Name="innergrid">
+        <!--:Name="innergrid"-->
+        <Grid.Resources>
+            <Image Width="128" Height="128" Source="/Images/043-warm.png" x:Key="ImgTemperature"/>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="30">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="30">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="30">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Column="0" Source="/images/043-warm.png"/>
+
+        <!-- Temperature -->
+        <materialDesign:PackIcon Grid.Row="0" Grid.Column="2" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="temp" Height="16">Temperature</TextBlock>
+        <materialDesign:PackIcon Grid.Row="1" Grid.Column="2" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,7,0,8"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,7,0,8" VerticalAlignment="Center" x:Name="minTemp" Height="16">Min Temperature: 200,50</TextBlock>
+        <materialDesign:PackIcon Grid.Row="2" Grid.Column="2" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="maxTemp" Height="16">Max Temperature</TextBlock>
+
+        <!-- Humidity, Presure, etc -->
+        <materialDesign:PackIcon Grid.Row="3" Grid.Column="2" Kind="Humidity" VerticalAlignment="Bottom" Margin="0,0,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="humidity" Height="16">Humidity</TextBlock>
+        <materialDesign:PackIcon Grid.Row="4" Grid.Column="2" Kind="WeatherCloudy" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="presure" Height="16">Presure</TextBlock>
+        <materialDesign:PackIcon Grid.Row="5" Grid.Column="2" Kind="PeriodicTableCo2" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="co2" Height="16">CO2: 1990</TextBlock>
+
+        <!-- Buttons -->
+        <Button Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="1" Height="Auto" Margin="0,0,0,30" Grid.RowSpan="2" Click="Update">Refresh</Button>
+        
+        <!-- Loading Symbols -->
+        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="5" Grid.ColumnSpan="2" Height="150" Width="150" x:Name="Loading" Source="Images/spinner-of-dots.png"/>
+
+    </Grid>
+</UserControl>
