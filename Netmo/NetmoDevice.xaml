@@ -18,7 +18,6 @@
 
 
     <Grid x:Name="innergrid">
-        <!--:Name="innergrid"-->
         <Grid.Resources>
             <Image Width="128" Height="128" Source="/Images/043-warm.png" x:Key="ImgTemperature"/>
         </Grid.Resources>

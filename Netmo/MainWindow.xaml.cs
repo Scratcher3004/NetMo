@@ -31,8 +31,8 @@ namespace Netmo
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static MainWindow mw;
-        public List<TabItem> TabDevices = new List<TabItem>();
+        public static MainWindow mw;                            // Static Instance of MainWindow
+        public List<TabItem> TabDevices = new List<TabItem>();  // All DeviceTabs, which was created
 
         private const string URL = "https://api.netatmo.com/oauth2/token";
         private const string ENCRYPTKEY = "NetMo2019";

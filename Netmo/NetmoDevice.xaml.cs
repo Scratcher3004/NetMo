@@ -24,28 +24,35 @@ namespace Netmo
     /// </summary>
     public partial class NetmoDevice : UserControl
     {
-        public static List<NetmoDevice> nd = new List<NetmoDevice>();
-        private Device device;
-        private int deviceID;
-        private bool refreshing = false;
-        private DispatcherTimer loadingTimer;
+        public static List<NetmoDevice> nd = new List<NetmoDevice>();   // All device Controls stored in a static list
+        private Device device;                                          // Downloaded Data for this Device
+        private int deviceID;                                           // DeviceID of this Device
+        private bool refreshing = false;                                // Show Refresh Loading Symbol?
+        private DispatcherTimer loadingTimer;                           // Timer for Refresh Loading Symbol rotation
 
         public NetmoDevice()
         {
-            InitializeComponent();
-            deviceID = nd.Count;
-            nd.Add(this);
+            InitializeComponent();  // Initialize UserControl
+            deviceID = nd.Count;    // Setting up the DeviceID of this DeviceControl
+            nd.Add(this);           // Add this DeviceControl to the list of all DEvicesControls
+
+            // Hide Loading Symbol
             Loading.Visibility = Visibility.Hidden;
             Loading.IsEnabled = false;
         }
 
+        // Initialize and display stored data
         public void Init(Device device_)
         {
-            // Store device
             device = device_;
             DisplayData();
         }
 
+        /// <summary>
+        /// Called when Refresh-Button was Clicked
+        /// </summary>
+        /// <param name="sender">Unused param</param>
+        /// <param name="e">Unused param</param>
         public async void Update(object sender, RoutedEventArgs e)
         {
             // Show Loading Symbol and Update Async
@@ -54,25 +61,35 @@ namespace Netmo
             Loading.IsEnabled = true;
             DownloadDataAsyncAndUpdate();
 
-            // Loading Animation
-            Loading.RenderTransform = new RotateTransform(0);
-            Loading.RenderTransformOrigin = new Point(0.5, 0.5);
-            loadingTimer = new DispatcherTimer();
-            loadingTimer.Tick += RotateWhileRefeshing;
-            loadingTimer.Interval = new TimeSpan(0, 0, 0, 0, 10);
-            loadingTimer.Start();
+            // Initializing the Loading Animation
+            Loading.RenderTransform = new RotateTransform(0);       // Reset Rotation
+            Loading.RenderTransformOrigin = new Point(0.5, 0.5);    // Set Origin
+            loadingTimer = new DispatcherTimer();                   // Create new Timer
+            loadingTimer.Tick += RotateWhileRefeshing;              // Adding RotateWhileRefreshing to the Timer-Tick event
+            loadingTimer.Interval = new TimeSpan(0, 0, 0, 0, 10);   // Setting the Timer-Interval to 10ms - Set the loading symbol by 100 degree per second
+            loadingTimer.Start();                                   // Starting the Timer event
         }
 
+        /// <summary>
+        /// Download the data async
+        /// </summary>
         private async void DownloadDataAsyncAndUpdate()
         {
-            device = await MainWindow.mw.GetDeviceData(deviceID);
-            DisplayData();
+            device = await MainWindow.mw.GetDeviceData(deviceID);   // Download Device data
+            DisplayData();                                          // Display new Device data
+
+            // Stopping Animation
             refreshing = false;
             Loading.Visibility = Visibility.Hidden;
             Loading.IsEnabled = false;
             loadingTimer.Stop();
         }
 
+        /// <summary>
+        /// Rotating the Loading Symbol by 1 degree. Params are only used for Timer events.
+        /// </summary>
+        /// <param name="sender">Unused param</param>
+        /// <param name="e">Unused param</param>
         private void RotateWhileRefeshing(object sender, EventArgs e)
         {
             if (((RotateTransform)Loading.RenderTransform).Angle >= 360)
@@ -99,11 +116,5 @@ namespace Netmo
             presure.Text = "Presure: " + data.Pressure;
             co2.Text = "CO2: " + data.Co2;
         }
-    }
-
-    public enum TextBlockIdentifierType
-    {
-        ByText,
-        ByID
     }
 }
