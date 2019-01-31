@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
-
+using System.IO;
+using System.Windows;
 
 namespace Netmo
 {
@@ -51,8 +52,39 @@ namespace Netmo
                 };
                 var response2 = await client.PostAsync("https://api.netatmo.com/api/getstationsdata", new FormUrlEncodedContent(kvp));
                 var datastr = response2.Content.ReadAsStringAsync().Result;
+                WriteFile(response2); // TODO: Remove
                 return Newtonsoft.Json.JsonConvert.DeserializeObject<NetAtmoResponse>(datastr);
             }
+        }
+
+        // TODO: Remove
+        private async void WriteFile(HttpResponseMessage response2)
+        {
+            if (response2 == null || !response2.IsSuccessStatusCode)
+            {
+                return;
+            }
+
+            string executingpath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            executingpath = RemoveEnding(executingpath);
+
+            if (File.Exists(executingpath + @"\temp.json"))
+            {
+                File.Delete(executingpath + @"\temp.json");
+            }
+            FileStream fs = File.Create(executingpath + @"\temp.json");
+            fs.Close();
+            File.WriteAllBytes(executingpath + @"\temp.json", await response2.Content.ReadAsByteArrayAsync());
+
+            Console.WriteLine(executingpath + @"\temp.json");
+        }
+
+        // TODO: Remove
+        private string RemoveEnding(string executingpath)
+        {
+            List<string> pathTiles = executingpath.Split(new char[] { Char.Parse(@"\") }).ToList();
+            pathTiles.Remove(pathTiles[pathTiles.Count - 1]);
+            return String.Join(@"\", pathTiles);
         }
 
         public NetAtmoResponse GetNetatmoWeatherData()

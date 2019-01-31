@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Netmo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="650" Width="800"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
@@ -35,134 +35,28 @@
             <TabItem Header="Home" HorizontalAlignment="Right" Width="51" Margin="0,-2,-2,2"/>
             <TabItem x:Name="tabDevice0" Header="Device0" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
                 <local:NetmoDevice x:Name="UserControlDevice0">
-                    
+
                 </local:NetmoDevice>
-                
             </TabItem>
             <TabItem x:Name="tabDevice1" Header="Device1" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
-                <Grid x:Name="NetatmoGrid1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <local:NetmoDevice x:Name="UserControlDevice1">
 
-                    <materialDesign:PackIcon Grid.Row="0" Grid.Column="0" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,7"></materialDesign:PackIcon>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Margin="1.373,7,0,7" VerticalAlignment="Center">Temperature: 8</TextBlock>
-
-                </Grid>
-
+                </local:NetmoDevice>
             </TabItem>
             <TabItem x:Name="tabDevice2" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
-                <Grid x:Name="NetatmoGrid2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <local:NetmoDevice x:Name="UserControlDevice2">
 
-                    <materialDesign:PackIcon Grid.Row="0" Grid.Column="0" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,7"></materialDesign:PackIcon>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Margin="1.373,7,0,7" VerticalAlignment="Center">Temperature: 8</TextBlock>
-
-                </Grid>
+                </local:NetmoDevice>
             </TabItem>
             <TabItem x:Name="tabDevice3" Header="Device3" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
-                <Grid  x:Name="NetatmoGrid3">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <local:NetmoDevice x:Name="UserControlDevice3">
 
-                    <materialDesign:PackIcon Grid.Row="0" Grid.Column="0" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,7"></materialDesign:PackIcon>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Margin="1.373,7,0,7" VerticalAlignment="Center">Temperature: 8</TextBlock>
-
-                </Grid>
+                </local:NetmoDevice>
             </TabItem>
             <TabItem x:Name="tabDevice4" Header="Device4" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
-                <Grid x:Name="NetatmoGrid4">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                        <RowDefinition Height="30">
-                        </RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*">
-                        </ColumnDefinition>
-                        <ColumnDefinition Width="Auto">
-                        </ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <local:NetmoDevice x:Name="UserControlDevice4">
 
-                    <materialDesign:PackIcon Grid.Row="0" Grid.Column="0" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,7"></materialDesign:PackIcon>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Margin="1.373,7,0,7" VerticalAlignment="Center">Temperature: 8</TextBlock>
-
-                </Grid>
+                </local:NetmoDevice>
             </TabItem>
             <TabItem Header="Settings">
                 <Grid>

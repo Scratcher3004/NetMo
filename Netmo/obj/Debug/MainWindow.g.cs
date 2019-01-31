@@ -77,7 +77,7 @@ namespace Netmo {
         
         #line 43 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid NetatmoGrid1;
+        internal Netmo.NetmoDevice UserControlDevice1;
         
         #line default
         #line hidden
@@ -93,7 +93,7 @@ namespace Netmo {
         
         #line 75 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid NetatmoGrid2;
+        internal Netmo.NetmoDevice UserControlDevice2;
         
         #line default
         #line hidden
@@ -109,7 +109,7 @@ namespace Netmo {
         
         #line 106 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid NetatmoGrid3;
+        internal Netmo.NetmoDevice UserControlDevice3;
         
         #line default
         #line hidden
@@ -125,7 +125,7 @@ namespace Netmo {
         
         #line 137 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Grid NetatmoGrid4;
+        internal Netmo.NetmoDevice UserControlDevice4;
         
         #line default
         #line hidden
@@ -221,25 +221,25 @@ namespace Netmo {
             this.tabDevice1 = ((System.Windows.Controls.TabItem)(target));
             return;
             case 5:
-            this.NetatmoGrid1 = ((System.Windows.Controls.Grid)(target));
+            this.UserControlDevice1 = ((Netmo.NetmoDevice)(target));
             return;
             case 6:
             this.tabDevice2 = ((System.Windows.Controls.TabItem)(target));
             return;
             case 7:
-            this.NetatmoGrid2 = ((System.Windows.Controls.Grid)(target));
+            this.UserControlDevice2 = ((Netmo.NetmoDevice)(target));
             return;
             case 8:
             this.tabDevice3 = ((System.Windows.Controls.TabItem)(target));
             return;
             case 9:
-            this.NetatmoGrid3 = ((System.Windows.Controls.Grid)(target));
+            this.UserControlDevice3 = ((Netmo.NetmoDevice)(target));
             return;
             case 10:
             this.tabDevice4 = ((System.Windows.Controls.TabItem)(target));
             return;
             case 11:
-            this.NetatmoGrid4 = ((System.Windows.Controls.Grid)(target));
+            this.UserControlDevice4 = ((Netmo.NetmoDevice)(target));
             return;
             case 12:
             this.txtName = ((System.Windows.Controls.TextBox)(target));
