@@ -79,13 +79,18 @@ namespace Netmo
 
             connector = new Connector(settings.ClientId, settings.ClientSecret, settings.Username, settings.Password);
 
+            var netatmodata = connector.GetNetatmoWeatherData();
             int i = 0;
             foreach (var item in NetmoDevice.nd)
             {
-                item.Init(connector.GetNetatmoWeatherData().Body.Devices[i]);
+                if (i >= netatmodata.Body.Devices.Length)
+                {
+                    item.Visibility = Visibility.Collapsed;
+                    break;
+                }
+                item.Init(netatmodata.Body.Devices[i]);
                 i++;
             }
-            var netatmodata = connector.GetNetatmoWeatherData();
             GenerateTabs(netatmodata);
         }
 
@@ -131,7 +136,7 @@ namespace Netmo
                 TabItem item = (TabItem)tabControl.Items[x];
                 item.Header = dev.ModuleName;
                 item.Visibility = Visibility.Visible;
-
+                
                 //var temptext = (TextBlock)UserControlDevice0.innergrid.Children[10];
                 //temptext.Text = "Temperature: " + dev.DashboardData.Temperature.ToString();
                 //var resgrid = (Grid)((TabItem)tabControl.Items[x]).FindName("NetatmoGrid" + (x-1).ToString());

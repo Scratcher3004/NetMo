@@ -38,6 +38,12 @@
             </RowDefinition>
             <RowDefinition Height="30">
             </RowDefinition>
+            <RowDefinition Height="30">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="Auto">
+            </RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto">
@@ -53,6 +59,10 @@
             <ColumnDefinition Width="Auto" MinWidth="30">
             </ColumnDefinition>
             <ColumnDefinition Width="Auto" MinWidth="30">
+            </ColumnDefinition>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto">
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
 
@@ -73,12 +83,49 @@
         <TextBlock Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="presure" Height="16">Presure</TextBlock>
         <materialDesign:PackIcon Grid.Row="5" Grid.Column="2" Kind="PeriodicTableCo2" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
         <TextBlock Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="co2" Height="16">CO2: 1990</TextBlock>
-
+        <materialDesign:PackIcon Grid.Row="6" Grid.Column="2" Kind="Music" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="noise" Height="16">Noise: 42</TextBlock>
+        <!--<materialDesign:PackIcon Grid.Row="7" Grid.Column="2" Kind="Clock" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
+        <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="date" Height="16">Last Measurement: 742390</TextBlock>-->
+        
+        <!-- Trends -->
+        <materialDesign:PackIcon Grid.Row="0" Grid.Column="4" Kind="ArrowUpBold" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="TempTrend"></materialDesign:PackIcon>
+        <materialDesign:PackIcon Grid.Row="4" Grid.Column="4" Kind="ArrowUpBold" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="PressureTemp"></materialDesign:PackIcon>
+        
         <!-- Buttons -->
-        <Button Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="1" Height="Auto" Margin="0,0,0,30" Grid.RowSpan="2" Click="Update">Refresh</Button>
+        <Button Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="1" Height="Auto" Margin="0,0,0,30" Grid.RowSpan="1" Click="Update">Refresh</Button>
         
         <!-- Loading Symbols -->
         <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="5" Grid.ColumnSpan="2" Height="150" Width="150" x:Name="Loading" Source="Images/spinner-of-dots.png"/>
+        
+        <!-- Modules -->
+        <TabControl Grid.Row="8" Grid.Column="0" x:Name="moduleTabs" Grid.ColumnSpan="7" Grid.RowSpan="2" MinWidth="430" MinHeight="155">
+            <TabItem x:Name="tabDevice1" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
+                <local:NetmoModule x:Name="UserControlDevice0">
 
+                </local:NetmoModule>
+            </TabItem>
+            <TabItem x:Name="tabDevice2" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
+                <local:NetmoModule x:Name="UserControlDevice1">
+
+                </local:NetmoModule>
+            </TabItem>
+            <TabItem x:Name="tabDevice3" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
+                <local:NetmoModule x:Name="UserControlDevice2">
+
+                </local:NetmoModule>
+            </TabItem>
+            <TabItem x:Name="tabDevice4" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
+                <local:NetmoModule x:Name="UserControlDevice3">
+
+                </local:NetmoModule>
+            </TabItem>
+            <TabItem x:Name="tabDevice5" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
+                <local:NetmoModule x:Name="UserControlDevice4">
+
+                </local:NetmoModule>
+            </TabItem>
+        </TabControl>
+        
     </Grid>
 </UserControl>

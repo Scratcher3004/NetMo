@@ -63,3 +63,5 @@ C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.csproj.CoreCompileInputs.cache
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.exe
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.pdb
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoModule.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoModule.baml
