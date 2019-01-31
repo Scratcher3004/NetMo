@@ -81,6 +81,9 @@
     </ApplicationDefinition>
     <Compile Include="Connector.cs" />
     <Compile Include="Encryption.cs" />
+    <Compile Include="NetmoModule.xaml.cs">
+      <DependentUpon>NetmoModule.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NetAtmoObject.cs" />
     <Compile Include="NetmoDevice.xaml.cs">
       <DependentUpon>NetmoDevice.xaml</DependentUpon>
@@ -98,6 +101,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NetmoModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NetmoDevice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
