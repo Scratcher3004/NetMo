@@ -66,7 +66,7 @@
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Column="0" Source="/images/043-warm.png"/>
+        <Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Column="0" Source="/images/043-warm.png" x:Name="temperatureRawImage"/>
 
         <!-- Temperature -->
         <materialDesign:PackIcon Grid.Row="0" Grid.Column="2" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
@@ -85,9 +85,7 @@
         <TextBlock Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="co2" Height="16">CO2: 1990</TextBlock>
         <materialDesign:PackIcon Grid.Row="6" Grid.Column="2" Kind="Music" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
         <TextBlock Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="noise" Height="16">Noise: 42</TextBlock>
-        <!--<materialDesign:PackIcon Grid.Row="7" Grid.Column="2" Kind="Clock" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
-        <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="date" Height="16">Last Measurement: 742390</TextBlock>-->
-        
+
         <!-- Trends -->
         <materialDesign:PackIcon Grid.Row="0" Grid.Column="4" Kind="ArrowUpBold" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="TempTrend"></materialDesign:PackIcon>
         <materialDesign:PackIcon Grid.Row="4" Grid.Column="4" Kind="ArrowUpBold" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="PressureTemp"></materialDesign:PackIcon>
@@ -96,10 +94,10 @@
         <Button Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="1" Height="Auto" Margin="0,0,0,30" Grid.RowSpan="1" Click="Update">Refresh</Button>
         
         <!-- Loading Symbols -->
-        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="5" Grid.ColumnSpan="2" Height="150" Width="150" x:Name="Loading" Source="Images/spinner-of-dots.png"/>
+        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="5" Grid.ColumnSpan="2" Height="150" Width="150" x:Name="Loading" Source="/Images/spinner-of-dots.png"/>
         
         <!-- Modules -->
-        <TabControl Grid.Row="8" Grid.Column="0" x:Name="moduleTabs" Grid.ColumnSpan="7" Grid.RowSpan="2" MinWidth="430" MinHeight="155">
+        <TabControl Grid.Row="8" Grid.Column="0" x:Name="moduleTabs" Grid.ColumnSpan="5" Grid.RowSpan="2" MinWidth="300" MinHeight="155">
             <TabItem x:Name="tabDevice1" Header="Device2" HorizontalAlignment="Right" Visibility="Collapsed" Width="Auto" Margin="0,-2,-2,2">
                 <local:NetmoModule x:Name="UserControlDevice0">
 

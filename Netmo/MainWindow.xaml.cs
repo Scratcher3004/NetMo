@@ -77,7 +77,7 @@ namespace Netmo
             //nvc.Add(new KeyValuePair<string, string>("username", System.Configuration.ConfigurationManager.AppSettings["usr"]));
             //nvc.Add(new KeyValuePair<string, string>("password", System.Configuration.ConfigurationManager.AppSettings["pwd"]));
 
-            connector = new Connector(settings.ClientId, settings.ClientSecret, settings.Username, settings.Password);
+            connector = new Connector(settings.ClientId, settings.ClientSecret, settings.Username, settings.Password, settings.DeviceId);
 
             var netatmodata = connector.GetNetatmoWeatherData();
             int i = 0;

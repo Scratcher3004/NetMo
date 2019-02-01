@@ -14,9 +14,11 @@ namespace Netmo
     {
 
         public static Token CurrentToken;
+        private string deviceID;
 
-        public Connector(string _clientid, string _clientsecret, string _username, string _password)
+        public Connector(string _clientid, string _clientsecret, string _username, string _password, string _deviceID)
         {
+            deviceID = _deviceID;
             var nvc = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>("client_id", _clientid),
@@ -48,7 +50,7 @@ namespace Netmo
                 var kvp = new List<KeyValuePair<string, string>>
                 {
                     new KeyValuePair<string, string>("access_token", CurrentToken.access_token),
-                    new KeyValuePair<string, string>("device_id", "70:ee:50:36:f0:2a")
+                    new KeyValuePair<string, string>("device_id", deviceID) //70:ee:50:36:f0:2a
                 };
                 var response2 = await client.PostAsync("https://api.netatmo.com/api/getstationsdata", new FormUrlEncodedContent(kvp));
                 var datastr = response2.Content.ReadAsStringAsync().Result;
@@ -79,6 +81,11 @@ namespace Netmo
             Console.WriteLine(executingpath + @"\temp.json");
         }
 
+        public void SetNewDeviceID(string _deviceID)
+        {
+            deviceID = _deviceID;
+        }
+
         // TODO: Remove
         private string RemoveEnding(string executingpath)
         {
@@ -95,7 +102,7 @@ namespace Netmo
                 var kvp = new List<KeyValuePair<string, string>>
                 {
                     new KeyValuePair<string, string>("access_token", CurrentToken.access_token),
-                    new KeyValuePair<string, string>("device_id", "70:ee:50:36:f0:2a")
+                    new KeyValuePair<string, string>("device_id", deviceID) //70:ee:50:36:f0:2a
                 };
                 var response2 = client.PostAsync("https://api.netatmo.com/api/getstationsdata", new FormUrlEncodedContent(kvp)).Result;
                 var datastr = response2.Content.ReadAsStringAsync().Result;

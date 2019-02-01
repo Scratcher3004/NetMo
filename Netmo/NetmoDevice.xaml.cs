@@ -110,12 +110,25 @@ namespace Netmo
             temp.Text = "Temperature: " + data.Temperature;
             minTemp.Text = "Min Temperature: " + data.MinTemp;
             maxTemp.Text = "Max Temperature: " + data.MaxTemp;
+            if (data.Temperature <= 5)
+            {
+                temperatureRawImage.Source = new BitmapImage(new Uri("images/042-cold.png", UriKind.Relative));
+            }
+            else if (data.Temperature >= 27.5)
+            {
+                temperatureRawImage.Source = new BitmapImage(new Uri("images/044-warm-1.png", UriKind.Relative));
+            }
+            else
+            {
+                temperatureRawImage.Source = new BitmapImage(new Uri("images/043-warm.png", UriKind.Relative));
+            }
 
             // Util Display
             humidity.Text = "Humidity: " + data.Humidity;
             presure.Text = "Presure: " + data.Pressure;
             co2.Text = "CO2: " + data.Co2;
             noise.Text = "Noise: " + data.Noise;
+
 
             // TrendDisplay
             switch (data.TempTrend) // Temperature Trend

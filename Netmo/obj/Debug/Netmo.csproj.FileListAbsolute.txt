@@ -48,43 +48,22 @@ C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\bin\
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.csprojResolveAssemblyReference.cache
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\MainWindow.g.cs
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoDevice.g.cs
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\App.g.cs
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo_MarkupCompile.cache
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo_MarkupCompile.lref
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\App.baml
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\MainWindow.baml
-C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoDevice.baml
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.g.resources
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.Properties.Resources.resources
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.csproj.GenerateResource.Cache
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.csproj.CoreCompileInputs.cache
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.exe
 C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Netmo.pdb
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\Netmo.exe.config
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\Netmo.exe
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\Netmo.pdb
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\MaterialDesignColors.dll
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.csprojResolveAssemblyReference.cache
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\MainWindow.g.cs
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\NetmoDevice.g.cs
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\App.g.cs
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo_MarkupCompile.cache
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo_MarkupCompile.lref
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\App.baml
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\MainWindow.baml
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\NetmoDevice.baml
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.g.resources
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.Properties.Resources.resources
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.csproj.GenerateResource.cache
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.csproj.CoreCompileInputs.cache
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.csproj.CopyComplete
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.exe
-C:\Users\Anwender\Source\Repos\NetmoRepo2\Netmo\obj\Debug\Netmo.pdb
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\MainWindow.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoModule.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoDevice.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\App.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\App.baml
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\MainWindow.baml
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoModule.baml
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\NetmoDevice.baml
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Setup.g.cs
+C:\Users\fried\Documents\Visual Studio 2017\Projects\ScratcherStudios\Netmo\obj\Debug\Setup.baml

@@ -12,7 +12,10 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <LinearGradientBrush x:Key="WindowBrush">
+                <GradientStop Offset="0" Color="White"/>
+                <GradientStop Offset="1" Color="Gray"/>
+            </LinearGradientBrush>
         </ResourceDictionary>
-        
     </Application.Resources>
 </Application>

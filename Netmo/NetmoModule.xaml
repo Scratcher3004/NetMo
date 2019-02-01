@@ -50,7 +50,7 @@
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Column="0" Source="/images/043-warm.png"/>
+        <Image Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Grid.Column="0" Source="/images/043-warm.png" x:Name="temperatureRawImage"/>
 
         <!-- Temperature -->
         <materialDesign:PackIcon Grid.Row="0" Grid.Column="2" Kind="TemperatureCelsius" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
@@ -65,9 +65,7 @@
         <TextBlock Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="humidity" Height="16">Humidity</TextBlock>
         <materialDesign:PackIcon Grid.Row="4" Grid.Column="2" Kind="PeriodicTableCo2" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="co2sign"></materialDesign:PackIcon>
         <TextBlock Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="co2" Height="16">CO2: 1990</TextBlock>
-        <!--<materialDesign:PackIcon Grid.Row="7" Grid.Column="2" Kind="Clock" VerticalAlignment="Center" Margin="0,8,0,7"></materialDesign:PackIcon>
-        <TextBlock Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="1" Margin="1,8,0,7" VerticalAlignment="Center" x:Name="date" Height="16">Last Measurement: 742390</TextBlock>-->
-
+        
         <!-- Trends -->
         <materialDesign:PackIcon Grid.Row="0" Grid.Column="4" Kind="ArrowUpBold" VerticalAlignment="Center" Margin="0,8,0,7" x:Name="TempTrend"></materialDesign:PackIcon>
     </Grid>

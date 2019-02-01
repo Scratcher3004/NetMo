@@ -12,9 +12,9 @@
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     Background="{DynamicResource MaterialDesignPaper}"
-     FontFamily="{DynamicResource MaterialDesignFont}">
-
+     FontFamily="{DynamicResource MaterialDesignFont}"
+     Background="{StaticResource WindowBrush}">
+    <!-- Erlier Background Definitiion: Background="{DynamicResource MaterialDesignPaper}" -->
     <Window.Resources>
         <LinearGradientBrush x:Key="gradientBackground">
             <GradientStop Offset="0" Color="LightBlue"></GradientStop>
@@ -58,7 +58,7 @@
 
                 </local:NetmoDevice>
             </TabItem>
-            <TabItem Header="Settings">
+            <TabItem Header="Log-In Settings">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30">
